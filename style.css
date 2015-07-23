@@ -1,0 +1,31 @@
+/* first github page */
+
+body{
+	color: #262626;
+	background: #f0f8ff;
+	font-family: monospace;
+	text-align: center;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+img{
+	max-width: 150px;
+	border-radius: 100%;
+	border: 3px solid white;
+}
+
+.portfolio a,
+.portfolio a:visited{
+	color: #f8f8f8;
+	background: #b0c4de;
+	max-width: 150px;
+	padding: 12px;
+}
+
+.portfolio a:hover{
+	background: #afeeee;
+}
