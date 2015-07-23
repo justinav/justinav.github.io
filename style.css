@@ -16,14 +16,17 @@ img{
 	max-width: 150px;
 	border-radius: 100%;
 	border: 3px solid white;
+	margin: 5px auto;
 }
 
 .portfolio a,
 .portfolio a:visited{
+	display: block;
 	color: #f8f8f8;
 	background: #b0c4de;
 	max-width: 150px;
 	padding: 12px;
+	margin: 20px auto 10px;
 }
 
 .portfolio a:hover{
