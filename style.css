@@ -1,44 +1,155 @@
-body,
+/* Globals */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
-	margin: 0;
-	padding: 0;
-	height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 body {
-	font: 400 18px/1.5 Sans-Serif;
+  color: #262626;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+
+img {
+  border: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1.5em;
+}
+
+/* Typography + Links */
+a { background: transparent; }
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+a, a:visited, a:active {color: Tomato; }
+
+a:hover { color: Teal; }
+
+a {
+  text-decoration: none;
+  border-bottom: 2px solid;
+  padding-bottom: 3px;
+}
+
+li a { border: none; }
+
+small {
+  font-size: 80%;
+}
+
+p, li { margin-bottom: 1.5em; }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  border-bottom: 2px solid;
+  padding-bottom: 1.5em;
+}
+
+time {
+  padding-right: 5px;
+}
+
+/* Base structure */
+
+header, section { 
+  max-width: 800px;
+  margin: 0 auto 10px;
+}
+
+header {
+  padding: 30px 10px;
+}
+
+header > p {
+  max-width: 500px;
+}
+
+.site-title {
+  color: #000000;
 }
 
 section {
-	display: table;
-	width: 100%;
-	height: 100%;
-	min-height: 100%;
+  padding: 10px;
 }
 
-article {
-	display: table-cell;
-	vertical-align: middle;
-	padding: 5px;
+footer {
+  text-align: center;
 }
 
-h1, 
-p,
-ul {
-	max-width: 500px;
-	margin: 0 auto;
+footer > p {
+  color: teal;
 }
 
-a,
-a:visited {
-	color: DeepPink;
+footer > p > span {
+  color: Tomato;
 }
 
-a:hover,
-a:active {
-	color: DodgerBlue;
+
+/* Clearings */
+article:before,
+article:after {
+  content: " ";
+  display: table;
 }
 
-h1 {
-	font-size: 3em;
+article:after {
+  clear: both;
+}
+
+.left, .right {  width: 100%; }
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  article {padding-bottom: 1.5em;}
+
+  .left, .right {  width: 50%; }
+
+  .left {
+    float: left;
+    padding-right: 30px;
+  }
+
+  .right {
+    float: right;
+    padding-left: 30px;
+  }
+
+  footer {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
 }
