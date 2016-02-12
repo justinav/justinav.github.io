@@ -51,6 +51,10 @@ nav {
   margin-top: 2em;
 }
 
+nav .btn {
+  line-height: 3.5;
+}
+
 .btn,
 .btn:hover,
 .btn:focus {
@@ -69,10 +73,6 @@ nav {
 .btn:focus {
   color: #f8f8f8;
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.btn {
-  line-height: 3.5;
 }
 
 
