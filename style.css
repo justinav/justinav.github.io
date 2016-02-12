@@ -1,4 +1,5 @@
-/* Globals */
+/* GLOBALS */
+
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
 * {
@@ -6,6 +7,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
@@ -18,138 +20,164 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-html,
-body {
+body,
+html {
   padding: 0;
   margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Inconsolata', Arial, sans-serif;
   overflow-x: hidden;
 }
 
-body {
-  color: #262626;
-  font-family: 'Inconsolata', monospace;
-  font-size: 16px;
-  font-weight: normal;
-  letter-spacing: 1.5px;
-  line-height: 1.5;
-}
-
 img {
-  border: 0;
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0 auto 1.5em;
+  max-width: 100%;
+  margin: 10px auto;
 }
-
-/* Typography + Links */
-a { background: transparent; }
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-a, a:visited, a:active {color: Tomato; }
-
-a:hover { color: Teal; }
 
 a {
+  color: Tomato;
   text-decoration: none;
-  border-bottom: 2px solid;
-  padding-bottom: 3px;
 }
 
-li a { border: none; }
-
-small {
-  font-size: 80%;
+h1 {
+  font-size: 60px;
+  word-wrap: break-word;
 }
 
-p, li { margin-bottom: 1.5em; }
+nav {
+  margin-top: 2em;
+}
 
-ul {
+.btn,
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  margin: 50px 5px 5px;
+  padding: 13px 20px;
+  font: 400 14px/1.5 'Gill Sans';
+  letter-spacing: 1px;
+  text-shadow: none;
+  /* Prevent inheritence from `body` */
+  background: black;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #f8f8f8;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* STRUCTURE */
+
+.cover {
+  background-size: cover;
+  display: table;
+  width: 100%;
+  height: 100%;
+  /* For at least Firefox */
+  min-height: 100%;
+}
+
+.inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px;
+}
+
+.header p,
+.projects,
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.header,
+.header a {
+  color: white;
+}
+
+.header {
+  background: url("http://static.tumblr.com/fc1b25fa455e99983ba8c263816ee00a/hbrcmgx/YSMnot6hm/tumblr_static_58vt1x3lbwwssgkwccc4sckkk.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header > .inner {
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.logo > span {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding: 15px 20px;
+  margin: 0 5px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.logo > span:hover {
+  background: Tomato;
+}
+
+
+/* PROJECTS */
+
+.projects ul {
   margin: 0;
   padding: 0;
 }
 
-li {
+.projects li {
+  margin-bottom: 1em;
+  padding: 0;
   list-style: none;
+}
+
+.projects li:after {
+  display: block;
+  content: '';
   border-bottom: 2px solid;
-  padding-bottom: 1.5em;
+  margin-top: 1em;
 }
 
-time {
-  padding-right: 5px;
-}
-
-/* Base structure */
-
-header, section { 
-  max-width: 800px;
-  margin: 0 auto 10px;
-}
-
-header {
-  padding: 30px 10px;
-}
-
-header > p {
-  max-width: 500px;
-}
-
-.site-title {
-  color: #000000;
-}
-
-section {
-  padding: 10px;
-}
-
-footer {
-  text-align: center;
-}
-
-footer > p {
-  color: teal;
-}
-
-footer > p > span {
-  color: Tomato;
+.left,
+.right {
+  width: 100%;
 }
 
 
-/* Clearings */
-article:before,
-article:after {
-  content: " ";
-  display: table;
-}
+/* DESKTOPS */
 
-article:after {
-  clear: both;
-}
-
-.left, .right {  width: 100%; }
-
-/* Media Queries */
 @media screen and (min-width: 768px) {
-  article {padding-bottom: 1.5em;}
-
-  .left, .right {  width: 50%; }
-
+  .inner:before,
+  .inner:after {
+    content: '';
+    display: table;
+  }
+  .inner:after {
+    clear: both;
+  }
+  .left,
+  .right {
+    width: 50%;
+  }
   .left {
     float: left;
     padding-right: 30px;
   }
-
   .right {
     float: right;
     padding-left: 30px;
-  }
-
-  footer {
-    padding-top: 30px;
-    padding-bottom: 10px;
   }
 }
