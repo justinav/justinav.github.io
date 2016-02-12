@@ -51,6 +51,10 @@ nav {
   margin-top: 2em;
 }
 
+.btn {
+  line-height: 3.5;
+}
+
 .btn,
 .btn:hover,
 .btn:focus {
