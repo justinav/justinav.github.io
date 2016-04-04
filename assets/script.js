@@ -61,4 +61,7 @@ d3.json("assets/projects.json", function(data) {
 
   projectContainer.selectAll("a")
     .attr("target", "_blank");
+
+  d3.select(".logo")
+    .on("click", function(){d3.select(this).classed("logoMobile", true);});
 });

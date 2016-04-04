@@ -329,4 +329,10 @@ footer .title {
     display: block;
     padding: 3px 10px;
   }
+
+  .logoMobile {
+    -webkit-animation: colorChange .5s ease infinite alternate;
+    -o-animation: colorChange .5s ease infinite alternate;
+    animation: colorChange .5s ease infinite alternate;
+  }
 }
