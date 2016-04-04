@@ -67,8 +67,8 @@ a.btn:hover {
   margin-bottom: 2em;
   padding: 20px;
   -webkit-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
 }
 .header h1, .header p, .header .nav {
   display: block;
@@ -85,21 +85,21 @@ a.btn:hover {
 }
 .lines {
   -ms-flex-line-pack: center;
-      -webkit-align-content: center;
-          align-content: center;
+  -webkit-align-content: center;
+  align-content: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-top: 2px solid;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 .title {
   background: #fcfcfc;
@@ -191,6 +191,34 @@ footer .title {
   width: 80px;
 }
 
+@-webkit-keyframes colorChange {
+  0% { fill: MediumVioletRed; }
+  25% { fill: OrangeRed; }
+  50% { fill: DeepPink; }
+  75% { fill: SpringGreen; }
+  100% {
+    fill: Gold;
+    width: 86px;
+  }
+}
+
+@keyframes colorChange {
+  0% { fill: MediumVioletRed; }
+  25% { fill: OrangeRed; }
+  50% { fill: DeepPink; }
+  75% { fill: SpringGreen; }
+  100% {
+    fill: Gold;
+    width: 86px;
+  }
+}
+
+.logo:hover {
+  -webkit-animation: colorChange .5s ease infinite alternate;
+  -o-animation: colorChange .5s ease infinite alternate;
+  animation: colorChange .5s ease infinite alternate;
+}
+
 /*
 *** Index PAGE
 */
@@ -244,30 +272,30 @@ footer .title {
   /* INDEX PAGE */
   .grid{
     -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
     height: 100%;
     -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .grid-item{
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: column wrap;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
     -moz-box-flex: 1;
     -webkit-box-flex: 1;
     width: 33.333%;
@@ -275,8 +303,8 @@ footer .title {
     -ms-flex: 1;
     flex: 1 0 33.333%;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 10px;
   }
 }

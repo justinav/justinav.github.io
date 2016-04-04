@@ -58,4 +58,7 @@ d3.json("assets/projects.json", function(data) {
       return "visit"
     }
   });
+
+  projectContainer.selectAll("a")
+    .attr("target", "_blank");
 });
