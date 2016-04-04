@@ -213,7 +213,8 @@ footer .title {
   }
 }
 
-.logo:hover {
+.logo:hover,
+.logo:active {
   -webkit-animation: colorChange .5s ease infinite alternate;
   -o-animation: colorChange .5s ease infinite alternate;
   animation: colorChange .5s ease infinite alternate;
