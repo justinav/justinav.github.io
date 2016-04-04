@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* Alt color: pink | #eeced6 */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background: #fcfcfc;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 100;
+}
+a {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+}
+a:hover {
+  color: #eeced6;
+}
+figure {
+  margin: 0;
+  width: 100%;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.btn {
+  background: #eee;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5em;
+  max-width: 150px;
+  padding: 12px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #eeced6;
+  transition: background-color 2s;
+}
+
+a.btn:hover {
+  color: #000;
+}
+
+/* Header */
+.header {
+  display: flex;
+  margin-bottom: 2em;
+  padding: 20px;
+  flex-flow: column nowrap;
+}
+.header h1, .header p, .header .nav {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 550px;
+  text-align: center;
+}
+.title-wrapper {
+  clear: both;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.lines {
+  align-content: center;
+  align-items: center;
+  border-top: 2px solid;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+.title {
+  background: #fcfcfc;
+  font-family: 'Abril Fatface';
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: auto;
+  padding: 0 12px;
+  position: relative;
+  text-transform: capitalize;
+  top: -23px;
+}
+.header .description {
+  font-size: 110%;
+}
+.nav a {
+  display: inline-block;
+}
+.nav a:hover {
+  color: inherit;
+}
+.nav a:after {
+  background: #eeced6;
+  bottom: 3px;
+  content: '';
+  height: 7px;
+  left: 0;
+  position: absolute;
+  transition: all .2s;
+  width: 100%;
+  z-index: -1;
+}
+.nav a:hover:after {
+  height: calc(100% + 3px);
+}
+.header .nav ul,
+footer ul {
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header .nav ul li,
+footer ul li {
+  display: inline-block;
+  margin-bottom: 0.6em;
+  padding-right: 20px;
+}
+.header .nav ul li:last-of-type,
+footer ul li:last-of-type {
+  padding-right: 0;
+}
+
+/* Body + Footer */
+.content {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.post a {
+  font-weight: 400;
+}
+
+footer {
+  background: #eeced6;
+  margin-top: 2em;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  border-bottom: 1px solid;
+}
+
+footer a:hover {
+  color: #262626;
+}
+
+footer .title {
+  background: #eeced6;
+}
+
+.logo {
+  fill: #eeced6;
+  stroke-width: 2.5;
+  stroke: #000;
+  width: 80px;
+}
+
+/*
+*** Index PAGE
+*/
+
+.photoContainer{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  max-width: 300px;
+}
+
+.caption {
+  font-size: 12px;
+  list-style: none;
+  margin-top: 1em;
+  margin: 0;
+  margin: 1em auto 0;
+  min-width: 270px;
+  max-width: 300px;
+  padding-bottom: 1em;
+  padding: 0;
+}
+
+.caption li {
+  border-bottom: 1px solid;
+  padding: 5px 3px;
+}
+
+.caption li:last-of-type {
+  border: 0;
+}
+
+.captionHeadline {
+  font-weight: 700;
+}
+
+/*
+*** DESKTOP VIEW
+*/
+
+@media screen and (min-width: 920px) {
+
+  /* INDEX PAGE */
+  .grid{
+    align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .grid-item{
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column wrap;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    width: 33.333%;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1 0 33.333%;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+
+/*
+*** TABLET AND MOBILE VIEW
+*/
+@media screen and (max-width: 919px) {
+  .grid{
+    display: block;
+    padding: 10px;
+  }
+  .grid-item {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  footer ul li {
+    display: block;
+    padding: 3px 10px;
+  }
+}

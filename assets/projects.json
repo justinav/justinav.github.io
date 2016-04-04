@@ -1,0 +1,66 @@
+[
+{
+  "src": "clapback-poster.jpg",
+  "title": "The Clap Back",
+  "description": "Poster design for symposium at The New School",
+  "url": "http://events.newschool.edu/event/women_clap_back_in_music_and_the_arts#.Vv6XuBIrLeS",
+  "downloadUrl": "",
+  "githubUrl": ""
+},
+{
+  "src": "slutist.jpg",
+  "title": "Slutist.com",
+  "description": "Developed magazine-style WordPress theme that is responsive and screen-reader-friendly",
+  "url": "http://slutist.com",
+  "downloadUrl": "",
+  "githubUrl": ""
+},
+{
+  "src": "craftspace.jpg",
+  "title": "CraftSpaceTheme.Tumblr.com",
+  "description": "Free + responsive Tumblr theme with 2,400+ active installs",
+  "url": "http://craftspacetheme.tumblr.com",
+  "downloadUrl": "",
+  "githubUrl": ""
+},
+{
+  "src": "kombucha-zine.jpg",
+  "title": "Kombucha Zine",
+  "description": "Designed for a Kombucha workshop by Eliane Gazzard",
+  "url": "",
+  "downloadUrl": "http://blastbeat.us/wp-content/uploads/2016/03/Kombucha.pdf",
+  "githubUrl": ""
+},
+{
+  "src": "colorname-1.jpg",
+  "title": "Colorname.xyz",
+  "description": "a simple colorname tool for making quick prototype sites",
+  "url": "http://colorname.xyz",
+  "downloadUrl": "",
+  "githubUrl": "https://github.com/justinav/colorname"
+},
+{
+  "src": "rockphotoredux.jpg",
+  "title": "Rock Photography Redux",
+  "description": "Designed slides and presented rock photography workshop for Photoville 2014",
+  "url": "",
+  "downloadUrl": "http://blastbeat.us/wp-content/uploads/2016/03/RockPhotoRedux-slide-1.pdf",
+  "githubUrl": ""
+},
+{
+  "src": "diy-zine.jpg",
+  "title": "A DIY Guide to Band Photography",
+  "description": "Zine designed for Photoville Dumbo 2013",
+  "url": "",
+  "downloadUrl": "http://blastbeat.us/wp-content/uploads/2015/08/DIYGUIDE-ZINE.pdf",
+  "githubUrl": ""
+},
+{
+  "src": "mickbarr.jpg",
+  "title": "MickBarr.info",
+  "description": "Ultra simple, responsive Tumblr site for musician",
+  "url": "http://mickbarr.info",
+  "downloadUrl": "",
+  "githubUrl": ""
+}
+]
