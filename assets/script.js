@@ -22,13 +22,11 @@ d3.json("assets/projects.json", function(data) {
   var caption = projectContainer.append("ul")
   .classed("caption", true);
 
-  var titleLink = caption.append("a")
-    .attr("href", function(d) {
-      if (d.url.length > 1) {return d.url;}
-    });
-
-  titleLink.append("li")
+  caption.append("li").append("a")
   .classed("captionHeadline", true)
+  .attr("href", function(d) {
+    if (d.url.length > 1) {return d.url;}
+  })
   .text(function(d) {
     return d.title;
   });
