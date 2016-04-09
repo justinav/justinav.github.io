@@ -1,6 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-/* Alt color: pink | #eeced6 */
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -13,11 +12,12 @@ html, body {
   height: 100vh;
 }
 body {
+  background: #666;
+  color: #f8f8f8;
   font-family: 'Open Sans', Helvetica, sans-serif;
-  background: #fcfcfc;
-  line-height: 1.5;
   font-size: 18px;
   font-weight: 300;
+  line-height: 1.5;
 }
 a {
   color: inherit;
@@ -25,7 +25,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #eeced6;
+  color: #222;
 }
 figure {
   margin: 0;
@@ -38,10 +38,10 @@ img {
   margin: 0 auto;
 }
 .btn {
-  background: #eee;
+  background: #222;
   border-radius: 8px;
   display: block;
-  font-weight: 400;
+  font-weight: 700;
   margin-left: auto;
   margin-right: auto;
   margin-top: .5em;
@@ -49,14 +49,9 @@ img {
   padding: 12px;
   text-align: center;
 }
-
 .btn:hover {
-  background: #eeced6;
+  background: #999;
   transition: background-color 2s;
-}
-
-a.btn:hover {
-  color: #000;
 }
 
 /* Header */
@@ -102,35 +97,40 @@ a.btn:hover {
   justify-content: flex-start;
 }
 .title {
-  background: #fcfcfc;
-  font-family: 'Abril Fatface';
+  background: #666;
+  color: #fff;
+  font-family: 'Inconsolata';
   font-size: 30px;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 8px;
   margin-top: auto;
   padding: 0 12px;
   position: relative;
-  text-transform: capitalize;
+  text-transform: uppercase;
   top: -23px;
 }
 .header .description {
   font-size: 110%;
 }
 .nav a {
+  color: #fff;
   display: inline-block;
   font-weight: 400;
+  padding: 3px;
 }
 .nav a:hover {
-  color: inherit;
+  color: #222;
 }
 .nav a:after {
-  background: #eeced6;
+  background: #999;
   bottom: 3px;
   content: '';
-  height: 7px;
+  height: 5px;
   left: 0;
   position: absolute;
-  transition: all .2s;
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
   width: 100%;
   z-index: -1;
 }
@@ -138,20 +138,18 @@ a.btn:hover {
   height: calc(100% + 3px);
 }
 .header .nav ul,
-footer ul {
+.footer ul {
   font-size: 14px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.header .nav ul li,
-footer ul li {
+.header .nav ul li {
   display: inline-block;
   margin-bottom: 0.6em;
   padding-right: 20px;
 }
-.header .nav ul li:last-of-type,
-footer ul li:last-of-type {
+.header .nav ul li:last-of-type {
   padding-right: 0;
 }
 
@@ -165,27 +163,30 @@ footer ul li:last-of-type {
   font-weight: 400;
 }
 
-footer {
-  background: #eeced6;
+.footer {
+  font-family: 'Inconsolata';
+  letter-spacing: 3px;
+  margin-bottom: 2em;
   margin-top: 2em;
   padding: 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 
-footer a {
+.footer a {
   border-bottom: 1px solid;
 }
 
-footer a:hover {
+.footer a:hover {
   color: #262626;
 }
 
-footer .title {
-  background: #eeced6;
+.footer .title {
+  background: #666;
 }
 
 .logo {
-  fill: #eeced6;
+  fill: #888;
   stroke-width: 2.5;
   stroke: #000;
   width: 80px;
@@ -216,6 +217,7 @@ footer .title {
 .logo:hover,
 .logo:active,
 .logo:focus {
+  -moz-animation: colorChange .5s ease infinite alternate;
   -webkit-animation: colorChange .5s ease infinite alternate;
   -o-animation: colorChange .5s ease infinite alternate;
   animation: colorChange .5s ease infinite alternate;
@@ -309,6 +311,29 @@ footer .title {
     justify-content: center;
     padding: 10px;
   }
+
+
+  .flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+  }
+
+  .left, .right {
+    width: 50%;
+    flex: auto;
+    display: block;
+  }
+
+  .left {
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  .right{
+    text-align: left;
+    padding-left: 15px;
+  }
 }
 
 /*
@@ -331,6 +356,7 @@ footer .title {
   }
 
   .logoMobile {
+    -moz-animation: colorChange .5s ease infinite alternate;
     -webkit-animation: colorChange .5s ease infinite alternate;
     -o-animation: colorChange .5s ease infinite alternate;
     animation: colorChange .5s ease infinite alternate;
