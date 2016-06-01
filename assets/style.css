@@ -1,5 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+/*
+Blue: #3000FF;
+White: #F8F8F8;
+*/
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -12,12 +17,11 @@ html, body {
   height: 100vh;
 }
 body {
-  background: #666;
-  color: #f8f8f8;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.5;
+  background: #f8f8f8;
+  color: #3000FF;
+  font-family: 'Gentium Book Basic';
+  font-size: 15px;
+  line-height: 1.3;
 }
 a {
   color: inherit;
@@ -25,7 +29,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #222;
+  color: #1F1D21;
 }
 figure {
   margin: 0;
@@ -33,118 +37,58 @@ figure {
 }
 img {
   display: block;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  height: auto !important;
   margin: 0 auto;
-}
-.btn {
-  background: #222;
-  border-radius: 8px;
-  display: block;
-  font-weight: 700;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .5em;
-  max-width: 150px;
-  padding: 12px;
-  text-align: center;
-}
-.btn:hover {
-  background: #999;
-  transition: background-color 2s;
 }
 
 /* Header */
 .header {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2em;
-  padding: 20px;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+  margin: 0 auto 2em;
+  padding: 3em 0 1em;
 }
+
 .header h1, .header p, .header .nav {
   display: block;
   margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 550px;
-  text-align: center;
 }
-.title-wrapper {
-  clear: both;
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-.lines {
-  -ms-flex-line-pack: center;
-  -webkit-align-content: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-top: 2px solid;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
+
 .title {
-  background: #666;
-  color: #fff;
-  font-family: 'Inconsolata';
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 8px;
-  margin-top: auto;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0;
   padding: 0 12px;
-  position: relative;
   text-transform: uppercase;
-  top: -23px;
 }
-.header .description {
-  font-size: 110%;
+.description {
+  font-family: 'Gentium Book Basic';
+  font-kerning: normal;
+  font-size: 30px;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 3em auto 1.5em;
 }
 .nav a {
-  color: #fff;
+  font-weight: 600;
   display: inline-block;
-  font-weight: 400;
-  padding: 3px;
 }
 .nav a:hover {
   color: #222;
 }
-.nav a:after {
-  background: #999;
-  bottom: 3px;
-  content: '';
-  height: 5px;
-  left: 0;
-  position: absolute;
-  -webkit-transition: all .8s;
-  -o-transition: all .8s;
-  transition: all .8s;
-  width: 100%;
-  z-index: -1;
-}
-.nav a:hover:after {
-  height: calc(100% + 3px);
-}
+
 .header .nav ul,
+.text ul,
 .footer ul {
-  font-size: 14px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 .header .nav ul li {
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   margin-bottom: 0.6em;
   padding-right: 20px;
@@ -159,37 +103,56 @@ img {
   max-width: 900px;
 }
 
+.headline {
+  font-family: 'Open Sans';
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-transform: uppercase;
+}
+
 .post a {
   font-weight: 400;
 }
 
+.caption {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer {
-  font-family: 'Inconsolata';
-  letter-spacing: 3px;
   margin-bottom: 2em;
   margin-top: 2em;
   padding: 20px;
-  text-align: center;
-  text-transform: uppercase;
+}
+
+.footer li {
+  margin-bottom: .8em;
 }
 
 .footer a {
-  border-bottom: 1px solid;
+  border-bottom: 2.5px solid;
+  padding-bottom: 2px;
 }
 
 .footer a:hover {
   color: #262626;
 }
 
-.footer .title {
-  background: #666;
+.logo-wrapper {
+  margin-top: 2.5em;
+  padding: 20px;
 }
 
 .logo {
-  fill: #888;
+  fill: #f8f8f8;
   stroke-width: 2.5;
-  stroke: #000;
+  stroke: #3000FF;
   width: 80px;
+  margin: .5em auto;
 }
 
 @-webkit-keyframes colorChange {
@@ -224,50 +187,6 @@ img {
 }
 
 /*
-*** Index PAGE
-*/
-
-.photoContainer {
-  display: block;
-  height: 280px;
-  margin: 0 auto;
-  position: relative;
-  width: 280px;
-}
-
-.photoContainer:hover {
-  height: 300px;
-  -webkit-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  transition: all 2s ease;
-  width: 300px;
-}
-
-.caption {
-  font-size: 12px;
-  list-style: none;
-  margin-top: 1em;
-  margin: 1em auto 0;
-  min-width: 270px;
-  max-width: 300px;
-  padding-bottom: 1em;
-  padding: 0;
-}
-
-.caption li {
-  border-bottom: 1px solid;
-  padding: 5px 3px;
-}
-
-.caption li:last-of-type {
-  border: 0;
-}
-
-.captionHeadline {
-  font-weight: 700;
-}
-
-/*
 *** DESKTOP VIEW
 */
 
@@ -275,48 +194,46 @@ img {
 
   /* INDEX PAGE */
   .grid{
-    -webkit-align-items: flex-start;
     -ms-flex-align: start;
+    -ms-flex-flow: row wrap;
+    -ms-flex-pack: justify;
+    -webkit-align-items: flex-start;
+    -webkit-flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
     align-items: flex-start;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     height: 100%;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
-  .grid-item{
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+  .homepage .grid {
+    width: 60%;
+  }
+
+  .project{
+    -moz-box-flex: 1;
+    -ms-flex-pack: space-between;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -webkit-justify-content: space-between;
+    flex: 1 0 180px;
+    justify-content: space-between;
+    max-width: 180px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .flex {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: column wrap;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
-    -moz-box-flex: 1;
-    -webkit-box-flex: 1;
-    width: 33.333%;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1 0 33.333%;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 10px;
-  }
-
-
-  .flex {
-    display: flex;
     flex-flow: row wrap;
     align-content: center;
+    justify-content: space-between;
   }
 
   .left, .right {
@@ -340,17 +257,50 @@ img {
 *** TABLET AND MOBILE VIEW
 */
 @media screen and (max-width: 919px) {
-  .grid{
-    display: block;
-    padding: 10px;
+  .header .flex {
+    text-align: center;
   }
-  .grid-item {
-    display: block;
-    margin-bottom: 1em;
-    width: 100%;
+  .headline {
+    font-size: 60px;
+  }
+  .text ul,
+  .footer ul {
+    max-width: 220px;
+    margin: 0 auto;
   }
 
-  footer ul li {
+  .homepage .flex {
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .grid{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 10px;
+    flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+  }
+
+  .slutist .grid {
+    flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+  }
+
+  .project{
+    max-width: 200px;
+    padding: 5px;
+    text-align: center;
+    flex: 1 0 200px;
+  }
+
+  .footer ul li {
     display: block;
     padding: 3px 10px;
   }

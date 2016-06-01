@@ -1,13 +1,5 @@
 [
 {
-  "src": "clapback-poster.jpg",
-  "title": "The Clap Back",
-  "description": "Poster design for symposium at The New School",
-  "url": "http://events.newschool.edu/event/women_clap_back_in_music_and_the_arts#.Vv6XuBIrLeS",
-  "downloadUrl": "",
-  "githubUrl": ""
-},
-{
   "src": "slutist.jpg",
   "title": "Slutist.com",
   "description": "Developed magazine-style WordPress theme that is responsive and screen-reader-friendly",
@@ -24,20 +16,28 @@
   "githubUrl": ""
 },
 {
-  "src": "kombucha-zine.jpg",
-  "title": "Kombucha Zine",
-  "description": "Designed for a Kombucha workshop by Eliane Gazzard",
-  "url": "",
-  "downloadUrl": "http://blastbeat.us/wp-content/uploads/2016/03/Kombucha.pdf",
-  "githubUrl": ""
-},
-{
   "src": "colorname-1.jpg",
   "title": "Colorname.xyz",
   "description": "a simple colorname tool for making quick prototype sites",
   "url": "http://colorname.xyz",
   "downloadUrl": "",
   "githubUrl": "https://github.com/justinav/colorname"
+},
+{
+  "src": "clapback-poster.jpg",
+  "title": "The Clap Back",
+  "description": "Poster design for symposium at The New School",
+  "url": "http://events.newschool.edu/event/women_clap_back_in_music_and_the_arts#.Vv6XuBIrLeS",
+  "downloadUrl": "",
+  "githubUrl": ""
+},
+{
+  "src": "kombucha-zine.jpg",
+  "title": "Kombucha Zine",
+  "description": "Designed for a Kombucha workshop by Eliane Gazzard",
+  "url": "",
+  "downloadUrl": "http://blastbeat.us/wp-content/uploads/2016/03/Kombucha.pdf",
+  "githubUrl": ""
 },
 {
   "src": "rockphotoredux.jpg",
