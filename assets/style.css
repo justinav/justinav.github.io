@@ -228,6 +228,27 @@ img {
     text-align: center;
   }
 
+  .project img:hover {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+    transition: all 2s;
+  }
+
+  /* color for inactive projects */
+  .text li:nth-of-type(n+2) {
+    color: gray;
+  }
+
+  .project:nth-of-type(n+2) {
+    color: gray;
+  }
+
+  .project:nth-of-type(n+2) img {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    opacity: 0.4;
+  }
+
   .flex {
     display: -ms-flexbox;
     display: -webkit-flex;
