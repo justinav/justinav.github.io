@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,100);
 
 /*
 Blue: #3000FF;
@@ -45,7 +46,7 @@ img {
 /* Header */
 .header {
   margin: 0 auto 2em;
-  padding: 3em 0 1em;
+  padding: 3em .5em 1em;
 }
 
 .header h1, .header p, .header .nav {
@@ -98,6 +99,7 @@ img {
 .content {
   margin: 0 auto;
   max-width: 900px;
+  padding: 5px;
 }
 
 .headline {
@@ -110,14 +112,17 @@ img {
   text-transform: uppercase;
 }
 
-.post a {
-  font-weight: 400;
-}
-
 .caption {
   max-width: 250px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.center {
+  margin: 1em auto 2em;
+  max-width: 500px;
+  text-align: center;
+  padding: 5px;
 }
 
 .footer {
@@ -214,9 +219,9 @@ img {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -webkit-justify-content: space-between;
-    flex: 1 0 180px;
+    flex: 1 0 33%;
     justify-content: space-between;
-    max-width: 180px;
+    max-width: 33%;
     padding: 5px;
     text-align: center;
   }
@@ -256,6 +261,9 @@ img {
   }
   .headline {
     font-size: 60px;
+  }
+  .description {
+    font-size: 20px;
   }
   .text ul,
   .footer ul {

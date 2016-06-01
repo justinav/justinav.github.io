@@ -31,6 +31,17 @@
     .slutist.header {
       background: #1F1D21;
       color: #f8f8f8;
+      height: 100%;
+    }
+
+    .slutist.header {
+      /* flex-box */
+      -ms-flex-flow: column wrap;
+      -webkit-flex-flow: column wrap;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: column wrap;
     }
 
     .slutist.header a:hover {
@@ -41,7 +52,23 @@
     .slutist.header .description {
       color: #ffe2dd;
       font-family: 'Raleway';
-      font-weight: 100;
+    }
+
+    .slutist.header .headline {
+      font-size: 60px;
+      font-weight: 200;
+      letter-spacing: 5px;
+      margin: auto;
+    }
+
+    .slutist.header .description {
+      font-weight: 500;
+      margin: 0 auto 2em;
+      text-align: center;
+    }
+
+    .slutist.header .btn {
+      margin: 1em .5em;
     }
 
     .slutist .grid > img {
@@ -51,7 +78,6 @@
     }
 
     .btn {
-      display: block;
       margin: 1em auto;
       max-width: 200px;
       background: #ffe2dd;
@@ -78,6 +104,19 @@
         -ms-flex-flow: column wrap;
         -webkit-flex-flow: column wrap;
       }
+
+      .slutist.header .headline {
+        font-size: 30px;
+      }
+
+      .slutist.header .btn {
+        display: block;
+        margin: 1em auto;
+      }
+
+      .slutist .grid > img {
+        max-width: 280px;
+      }
     }
   </style>
 </head>
@@ -102,7 +141,12 @@
   </div>
 
   <h2 class="headline">Slutist.com</h2>
-  <p class="description">WordPress theme design for sex-positive feminist website</p>
+  <p class="description">WordPress theme development</p>
+
+  <div class="center">
+    <a href="http://slutist.com" target="_blank" class="btn">Visit Slutist.com &#8594;</a>
+    <a href="#process" class="btn">View Process</a>
+  </div>
 </header>
 
 <!--
@@ -110,13 +154,12 @@
 -->
 
 <main role="main" class="slutist content">
-  <a href="http://slutist.com" target="_blank"><p class="btn">visit Slutist.com &#8594;</p></a>
-  <h2 class="headline">The Process</h2>
+  <h2 class="headline" id="process">The Process</h2>
   <div class="description">
     <p>It all started with a few troubleshooting questions. I did a few quick css patchups before realizing the site needed a complete overhaul. </p>
   </div>
   <img src="images/slutist-mobilemock.jpg" alt="">
-  <p class="description">The first order of business was making the site responsive. It was so hard to read Slutist articles on a mobile device. Once I realized that there were 3 overlapping stylesheets and a mess of plugins causing problems, I started working on a new theme design.</p>
+  <p class="description">The first order of business was making the site responsive because it was hard to read Slutist articles on mobile devices. Once I realized that there were 3 overlapping stylesheets and a mess of plugins causing problems, I started working on a new theme design.</p>
 
   <div class="grid">
     <img src="images/nu-slutist-1.jpg" alt="">
@@ -132,6 +175,8 @@
     <img src="images/slutist-072015.jpg" alt="">
     <img src="images/slutist-052016.jpg" alt="">
   </div>
+
+  <a href="http://slutist.com" target="_blank"><p class="btn">visit Slutist.com &#8594;</p></a>
 </main>
 
 <!--
