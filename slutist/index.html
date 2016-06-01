@@ -29,9 +29,23 @@
 
   <style>
     .slutist.header {
-      background: #1F1D21;
+      background: #3000FF;
       color: #f8f8f8;
       height: 100%;
+    }
+
+    .slutist.header:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.2;
+      background-image: url('images/bg.jpg');
+      background-size: cover;
+      background-position: center;
     }
 
     .slutist.header {
@@ -69,6 +83,7 @@
 
     .slutist.header .btn {
       margin: 1em .5em;
+      color: #f8f8f8;
     }
 
     .slutist .grid > img {
@@ -78,32 +93,27 @@
     }
 
     .btn {
-      margin: 1em auto;
-      max-width: 200px;
-      background: #ffe2dd;
-      padding: 12px;
       border-radius: 8px;
+      border: 2px solid;
       color: #1F1D21;
       font-family: 'Open Sans';
       font-weight: 700;
+      margin: 1em auto;
+      max-width: 200px;
+      padding: 12px;
       text-align: center;
     }
 
     .btn:hover {
-      color: #ffe2dd;
+      color: #f8f8f8;
       background: #1F1D21;
-      transition: background-color 2s;
+      transition: all 2s;
     }
 
     /*
     *** TABLET AND MOBILE VIEW
     */
     @media screen and (max-width: 919px) {
-      .slutist .grid {
-        flex-flow: column wrap;
-        -ms-flex-flow: column wrap;
-        -webkit-flex-flow: column wrap;
-      }
 
       .slutist.header .headline {
         font-size: 30px;
@@ -112,10 +122,6 @@
       .slutist.header .btn {
         display: block;
         margin: 1em auto;
-      }
-
-      .slutist .grid > img {
-        max-width: 280px;
       }
     }
   </style>
@@ -162,18 +168,30 @@
   <p class="description">The first order of business was making the site responsive because it was hard to read Slutist articles on mobile devices. Once I realized that there were 3 overlapping stylesheets and a mess of plugins causing problems, I started working on a new theme design.</p>
 
   <div class="grid">
-    <img src="images/nu-slutist-1.jpg" alt="">
-    <img src="images/nu-slutist-2.jpg" alt="">
-    <img src="images/nu-slutist-3.jpg" alt="">
-    <img src="images/nu-slutist-4.jpg" alt="">
+    <div class="grid--2">
+      <img src="images/nu-slutist-1.jpg" alt="">
+    </div>
+    <div class="grid--2">
+      <img src="images/nu-slutist-2.jpg" alt="">
+    </div>
+    <div class="grid--2">
+      <img src="images/nu-slutist-3.jpg" alt="">
+    </div>
+    <div class="grid--2">
+      <img src="images/nu-slutist-4.jpg" alt="">
+    </div>
   </div>
 
   <p class="description">After playing with some ideas in Photoshop. I started talking to Kristen (Slutist founder) about priorities and what were the biggest changes she wanted for the site. I built the prototype locally, deployed a development version and after two months of working out key elements, I arrived at the below magazine-style grid layout.</p>
 
   <h2 class="headline">Before &#38; After</h2>
   <div class="grid">
-    <img src="images/slutist-072015.jpg" alt="">
-    <img src="images/slutist-052016.jpg" alt="">
+    <div class="grid--2">
+      <img src="images/slutist-072015.jpg" alt="">
+    </div>
+    <div class="grid--2">
+      <img src="images/slutist-052016.jpg" alt="">
+    </div>
   </div>
 
   <a href="http://slutist.com" target="_blank"><p class="btn">visit Slutist.com &#8594;</p></a>

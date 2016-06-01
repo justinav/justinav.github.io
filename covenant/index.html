@@ -28,48 +28,74 @@
   <meta property="twitter:title" content="Justina Villanueva">
 
   <style>
+    .header {
+      background: #1F1D21;
+      color: white;
+    }
 
-   .craftspace.header {
-    background: Red;
-    color: white;
-  }
+    .header a:hover {
+      color: Gold;
+    }
 
-  .craftspace.header .description {
-    font-weight: 500;
-    margin: 0 auto 2em;
-    text-align: center;
-  }
+    .header .description {
+      font-weight: 500;
+      margin: 0 auto 2em;
+      text-align: center;
+    }
 
-  .btn {
-    display: block;
-    color: #fff;
-    margin: 1em auto;
-    max-width: 220px;
-    background: #3000FF;
-    padding: 12px;
-    border-radius: 8px;
-    font-family: 'Open Sans';
-    font-weight: 700;
-    text-align: center;
-  }
+    .covenant.content {
+      color: #1F1D21;
+    }
 
-  .btn:hover {
-    color: #ffe2dd;
-    background: Red;
-    transition: background-color 2s;
-  }
+    .btn {
+      display: block;
+      color: #fff;
+      margin: 1em auto;
+      max-width: 220px;
+      background: #1F1D21;
+      padding: 12px;
+      border-radius: 8px;
+      font-family: 'Open Sans';
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .btn:hover {
+      color: #ffe2dd;
+      background: #3000FF;
+      transition: background-color 2s;
+    }
+
+    .grid > .grid-item {
+      max-width: 48%;
+      justify-content: space-between;
+      padding: 2%;
+    }
+
+    .grid > .grid-item img {
+      border: 1px solid #eee;
+    }
+
+    .footer {
+      color: #1F1D21;
+      margin: 0;
+    }
+
+    .logo {
+      stroke: #1F1D21;
+    }
 
     /*
     *** TABLET AND MOBILE VIEW
     */
     @media screen and (max-width: 919px) {
-      .craftspace .grid {
+      .grid {
         flex-flow: column wrap;
         -ms-flex-flow: column wrap;
         -webkit-flex-flow: column wrap;
       }
 
-      .craftspace .grid > .grid-item {
+      .grid > .grid-item {
         max-width: 90%;
         margin: 0 auto;
       }
@@ -82,7 +108,7 @@
 *** HEADER ***
 -->
 
-<header role="banner" class="craftspace header">
+<header role="banner" class="covenant header">
   <div class="flex">
     <h1 id="title" class="title"><a href="/">Justina Villanueva</a></h1>
 
@@ -96,47 +122,68 @@
     </nav>
   </div>
 
-  <h2 class="headline">Craft Space</h2>
-  <p class="description">Tumblr theme development</p>
+  <h2 class="headline">Covenant</h2>
+  <p class="description">iOS App Design</p>
 </header>
 
 <!--
 *** MAIN ***
 -->
 
-<main role="main" class="craftspace content">
-  <div class="flex">
-    <div class="text left">
-      <p class="description">responsive two-column theme</p>
-      <p>I wanted to develop something that could be used by bloggers, that was simple, responsive, yet easily customizable.</p>
-    </div>
-    <div class="img right">
-      <img src="images/craftspace.jpg" alt="">
-    </div>
-  </div>
-
+<main role="main" class="covenant content">
+  <h2 class="headline">The Concept</h2>
+  <p class="description center">
+    Anti-social-media for metalheads.
+  </p>
+  <p class="description">
+    That is pretty much how <a href="http://metalcongregation.com" target="_blank">Mike</a> described the app to me. It's a combination of #nowplaying, bandcamp's wishlist and Mike's fanatical dedication to finding new music. This is still very much a work in progress.
+  </p>
 
   <div class="center">
-    <a href="http://craftspacetheme.tumblr.com" target="_blank" class="btn">Visit Preview &#8594;</a>
-    <a href="https://www.tumblr.com/theme/39318" class="btn">Download from Tumblr &#8594;</a>
-    <a href="https://github.com/justinav/tumblr-themes/tree/master/craftspace" class="btn">GitHub Repo &#8594;</a>
+    <a href="#wireframes" class="btn">Wireframes</a>
+    <a href="#mocks" class="btn">Mocks</a>
   </div>
 
-  <h2 class="headline">Examples</h2>
+  <img src="images/ia.jpg" alt="">
 
+  <h2 class="headline" id="wireframes">Wireframes</h2>
   <div class="grid">
     <div class="grid--2">
-      <a href="http://anarainbow.tumblr.com/" target="_blank"><img src="images/tumblr-anarainbow.jpg" alt=""></a>
+      <img src="images/wf-1.jpg" alt="">
     </div>
     <div class="grid--2">
-      <a href="http://barelyanoutline.tumblr.com/" target="_blank"><img src="images/tumblr-51somethings.jpg" alt=""></a>
+      <img src="images/wf-2.jpg" alt="">
     </div>
     <div class="grid--2">
-      <a href="http://designwork-j.tumblr.com/" target="_blank"><img src="images/tumblr-designwork.jpg" alt=""></a>
+      <img src="images/wf-3.jpg" alt="">
     </div>
     <div class="grid--2">
-      <a href="http://jellogalaxy.tumblr.com/" target="_blank"><img src="images/tumblr-jellogalaxy.jpg" alt=""></a>
+      <img src="images/wf-4.jpg" alt="">
     </div>
+  </div>
+
+  <h2 class="headline" id="mocks">Mocks</h2>
+  <div class="grid">
+    <div class="grid--4">
+      <img src="images/mock1.png" alt="">
+    </div>
+    <div class="grid--4">
+      <img src="images/mock2.png" alt="">
+    </div>
+    <div class="grid--4">
+      <img src="images/mock3.png" alt="">
+    </div>
+    <div class="grid--4">
+      <img src="images/mock4.png" alt="">
+    </div>
+  </div>
+
+  <div class="description">
+  Tools used:
+    <ul>
+      <li>Google Slides for idea organization, wireframing, ia and collaboration</li>
+      <li>Sketch for mockups</li>
+    </ul>
   </div>
 </main>
 

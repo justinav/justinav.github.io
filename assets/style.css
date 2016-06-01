@@ -210,6 +210,22 @@ img {
     justify-content: flex-start;
   }
 
+  .grid--4 {
+    max-width: 23%;
+    justify-content: space-between;
+    padding: 2%;
+  }
+
+  .grid--2 {
+    max-width: 48%;
+    justify-content: space-between;
+    padding: 2%;
+  }
+
+  .craftspace .grid > * img {
+    border: 1px solid #eee;
+  }
+
   .homepage .grid {
     width: 60%;
   }
@@ -235,15 +251,15 @@ img {
   }
 
   /* color for inactive projects */
-  .text li:nth-of-type(n+3) {
+  .text li:nth-of-type(n+4) {
     color: gray;
   }
 
-  .project:nth-of-type(n+3) {
+  .project:nth-of-type(n+4) {
     color: gray;
   }
 
-  .project:nth-of-type(n+3) img {
+  .project:nth-of-type(n+4) img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.4;
@@ -312,10 +328,9 @@ img {
     -webkit-flex-flow: row wrap;
   }
 
-  .slutist .grid {
-    flex-flow: column wrap;
-    -ms-flex-flow: column wrap;
-    -webkit-flex-flow: column wrap;
+  [class*="grid--"] {
+    max-width: 90%;
+    margin: 1em auto;
   }
 
   .project{
