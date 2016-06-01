@@ -76,9 +76,6 @@ img {
   font-weight: 600;
   display: inline-block;
 }
-.nav a:hover {
-  color: #222;
-}
 
 .header .nav ul,
 .text ul,
@@ -133,13 +130,10 @@ img {
   margin-bottom: .8em;
 }
 
+.description a,
 .footer a {
   border-bottom: 2.5px solid;
   padding-bottom: 2px;
-}
-
-.footer a:hover {
-  color: #262626;
 }
 
 .logo-wrapper {
