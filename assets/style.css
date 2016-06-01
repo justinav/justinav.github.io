@@ -235,16 +235,16 @@ img {
   }
 
   /* color for inactive projects */
-  .text li:nth-of-type(n+2) {
+  .text li:nth-of-type(n+3) {
     color: gray;
   }
 
-  .project:nth-of-type(n+2) {
+  .project:nth-of-type(n+3) {
     color: gray;
   }
 
-  .project:nth-of-type(n+2) img {
-    -webkit-filter: grayscale(100%); 
+  .project:nth-of-type(n+3) img {
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.4;
   }
