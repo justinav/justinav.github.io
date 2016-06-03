@@ -34,6 +34,17 @@ a {
 a:hover {
   color: #1F1D21;
 }
+.text .outerUrl:hover {
+  -webkit-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
+  transition: all 8s;
+}
+.outerUrl:after {
+  content: '\2192';
+  padding: 3px;
+  position: relative;
+  top: 0.099em;
+}
 figure {
   margin: 0;
   width: 100%;
@@ -115,9 +126,7 @@ img {
 }
 
 .caption {
-  max-width: 250px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 220px;
 }
 
 .center {
@@ -250,26 +259,13 @@ img {
     transition: all 2s;
   }
 
-  /* color for inactive projects */
-  .text li:nth-of-type(n+4) {
-    color: gray;
-  }
-
-  .project:nth-of-type(n+4) {
-    color: gray;
-  }
-
-  .project:nth-of-type(n+4) img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.4;
-  }
-
   .flex {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
     align-content: center;
     justify-content: space-between;
   }
@@ -306,6 +302,7 @@ img {
     font-size: 20px;
   }
   .text ul,
+  .text p,
   .footer ul {
     max-width: 220px;
     margin: 0 auto;
