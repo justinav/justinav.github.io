@@ -1,0 +1,45 @@
+/*
+* Dark Theme
+*/
+.darkTheme a:hover {
+  color: gold;
+}
+
+.darkTheme .header {
+  background: #1F1D21;
+  color: white;
+}
+
+.darkTheme .header .description {
+  font-weight: 500;
+  margin: 0 auto 2em;
+  text-align: center;
+}
+
+.darkTheme .content {
+  color: #1F1D21;
+}
+
+.btn {
+  display: block;
+  color: #fff;
+  background: #1F1D21;
+}
+
+.btn:hover {
+  background: gold;
+  transition: background-color 2s;
+}
+
+a.btn:hover {
+  color: #1F1D21;
+}
+
+.darkTheme .footer {
+  color: #1F1D21;
+  margin: 0;
+}
+
+.darkTheme .logo {
+  stroke: #1F1D21;
+}

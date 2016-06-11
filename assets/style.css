@@ -45,6 +45,12 @@ a:hover {
   position: relative;
   top: 0.099em;
 }
+.downloadUrl:after {
+  content: '\2193';
+  padding: 3px;
+  position: relative;
+  top: 0.099em;
+}
 figure {
   margin: 0;
   width: 100%;
@@ -54,6 +60,21 @@ img {
   max-width: 100%;
   height: auto !important;
   margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  margin: 1em auto;
+  max-width: 220px;
+  padding: 12px;
+  text-align: center;
+}
+
+.btn:hover {
+  transition: all 2s;
 }
 
 /* Header */
@@ -165,6 +186,7 @@ img {
   margin: .5em auto;
 }
 
+/* Transitions */
 @-webkit-keyframes colorChange {
   0% { fill: MediumVioletRed; }
   25% { fill: OrangeRed; }
@@ -258,6 +280,11 @@ img {
     filter: hue-rotate(360deg);
     transition: all 2s;
   }
+  #zine-grid .project img:hover {
+    -webkit-filter: brightness(120%)  grayscale(100%);
+    filter: brightness(120%) grayscale(100%);
+    transition: all 2s;
+  }
 
   .flex {
     display: -ms-flexbox;
@@ -297,6 +324,8 @@ img {
   .headline {
     font-size: 60px;
     max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .description {
     font-size: 20px;

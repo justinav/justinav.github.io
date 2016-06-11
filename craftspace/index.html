@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css" media="all">
   <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/redTheme.css">
 
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
@@ -27,62 +28,15 @@
   <meta property="twitter:creator" content="@justina__v">
   <meta property="twitter:title" content="Justina Villanueva">
 
-  <style>
-
-   .craftspace.header {
-    background: Red;
-    color: white;
-  }
-
-  .craftspace.header .description {
-    font-weight: 500;
-    margin: 0 auto 2em;
-    text-align: center;
-  }
-
-  .btn {
-    display: block;
-    color: #fff;
-    margin: 1em auto;
-    max-width: 220px;
-    background: #3000FF;
-    padding: 12px;
-    border-radius: 8px;
-    font-family: 'Open Sans';
-    font-weight: 700;
-    text-align: center;
-  }
-
-  .btn:hover {
-    color: #ffe2dd;
-    background: Red;
-    transition: background-color 2s;
-  }
-
-    /*
-    *** TABLET AND MOBILE VIEW
-    */
-    @media screen and (max-width: 919px) {
-      .craftspace .grid {
-        flex-flow: column wrap;
-        -ms-flex-flow: column wrap;
-        -webkit-flex-flow: column wrap;
-      }
-
-      .craftspace .grid > .grid-item {
-        max-width: 90%;
-        margin: 0 auto;
-      }
-    }
-  </style>
+  <style></style>
 </head>
-<body>
+<body class="redTheme craftspace">
 
 <!--
 *** HEADER ***
 -->
 
-<header role="banner" class="craftspace header">
+<header role="banner" class="header">
   <div class="flex">
     <h1 id="title" class="title"><a href="/">Justina Villanueva</a></h1>
 
@@ -105,11 +59,17 @@
 *** MAIN ***
 -->
 
-<main role="main" class="craftspace content">
+<main role="main" class="content">
   <div class="flex">
     <div class="text left">
-      <p class="description">responsive two-column theme</p>
-      <p>I wanted to develop something that could be used by bloggers, that was simple, responsive, yet easily customizable.</p>
+      <p class="description">I wanted to develop something that could be used by bloggers, that was simple, responsive, yet easily customizable.</p>
+      <ul>
+        <li><strong>Features:</strong></li>
+        <li>Two-Column Theme</li>
+        <li>One button switch to single column</li>
+        <li>Free</li>
+        <li>Responsive</li>
+      </ul>
     </div>
     <div class="img right">
       <img src="images/craftspace.jpg" alt="">

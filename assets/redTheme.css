@@ -1,0 +1,36 @@
+/*
+* Red Theme
+*/
+
+.redTheme .header {
+  background: red;
+  color: white;
+}
+
+.redTheme .header .description {
+  font-weight: 500;
+  margin: 0 auto 2em;
+  text-align: center;
+}
+
+.redTheme .content,
+.redTheme .footer {
+  color: red;
+}
+
+.redTheme .logo {
+  stroke: red;
+}
+
+.btn {
+  border: 1px solid red;
+  display: block;
+  color: #fff;
+  background: Red;
+}
+
+.btn:hover {
+  border: 1px solid;
+  color: Red;
+  background: rgba(0,0,0,0);
+}
