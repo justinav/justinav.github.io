@@ -23,14 +23,10 @@
 }
 
 .btn {
-  border: 1px solid red;
-  display: block;
   color: #fff;
   background: Red;
 }
 
 .btn:hover {
-  border: 1px solid;
   color: Red;
-  background: rgba(0,0,0,0);
 }

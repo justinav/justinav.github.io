@@ -63,18 +63,25 @@ img {
 }
 
 /* Buttons */
+.header .btn {
+  display: inline;
+}
 .btn {
+  display: block;
+  border: 2px solid rgba(0,0,0,0);
   border-radius: 8px;
   font-family: 'Open Sans';
   font-weight: 700;
   margin: 1em auto;
-  max-width: 220px;
+  max-width: 230px;
   padding: 12px;
   text-align: center;
 }
 
 .btn:hover {
-  transition: all 2s;
+  transition: background-color 2s;
+  border: 2px solid;
+  background: rgba(0,0,0,0);
 }
 
 /* Header */
@@ -253,7 +260,7 @@ img {
     padding: 2%;
   }
 
-  .craftspace .grid > * img {
+  .grid > * img {
     border: 1px solid #eee;
   }
 
@@ -274,13 +281,13 @@ img {
     padding: 5px;
     text-align: center;
   }
-
   .project img:hover {
     -webkit-filter: hue-rotate(360deg);
     filter: hue-rotate(360deg);
     transition: all 2s;
   }
-  #zine-grid .project img:hover {
+  .zine img:hover,
+  .tools img:hover {
     -webkit-filter: brightness(120%)  grayscale(100%);
     filter: brightness(120%) grayscale(100%);
     transition: all 2s;
