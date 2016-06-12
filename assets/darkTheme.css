@@ -20,18 +20,18 @@
   color: #1F1D21;
 }
 
-.btn {
+.darkTheme .btn {
   display: block;
   color: #fff;
   background: #1F1D21;
 }
 
-.btn:hover {
+.darkTheme .btn:hover {
   background: gold;
   transition: background-color 2s;
 }
 
-a.btn:hover {
+.darkTheme a.btn:hover {
   color: #1F1D21;
 }
 
