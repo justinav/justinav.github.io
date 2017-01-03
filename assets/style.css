@@ -197,35 +197,31 @@ p {
 
 
 /* Transitions */
+
+
 @-webkit-keyframes colorChange {
-  0% { fill: MediumVioletRed; }
-  25% { fill: OrangeRed; }
-  50% { fill: DeepPink; }
-  75% { fill: SpringGreen; }
-  100% {
-    fill: Gold;
-    width: 86px;
-  }
+  0% { fill: #595af2; }
+  25% { fill: #ddff0b; }
+  50% { fill: #bcf2e9; }
+  75% { fill: #ffc5ff; }
+  100% {fill: #ff1301;}
 }
 
 @keyframes colorChange {
-  0% { fill: MediumVioletRed; }
-  25% { fill: OrangeRed; }
-  50% { fill: DeepPink; }
-  75% { fill: SpringGreen; }
-  100% {
-    fill: Gold;
-    width: 86px;
-  }
+  0% { fill: #595af2; }
+  25% { fill: #ddff0b; }
+  50% { fill: #bcf2e9; }
+  75% { fill: #ffc5ff; }
+  100% {fill: #ff1301;}
 }
 
 .logo:hover,
 .logo:active,
 .logo:focus {
-  -moz-animation: colorChange .5s ease infinite alternate;
-  -webkit-animation: colorChange .5s ease infinite alternate;
-  -o-animation: colorChange .5s ease infinite alternate;
-  animation: colorChange .5s ease infinite alternate;
+  -moz-animation: colorChange 2s ease infinite alternate;
+  -webkit-animation: colorChange 2s ease infinite alternate;
+  -o-animation: colorChange 2s ease infinite alternate;
+  animation: colorChange 2s ease infinite alternate;
 }
 
 /*
@@ -295,14 +291,14 @@ p {
     text-align: center;
   }
 
+  img {
+    max-width: 500px;
+  }
+
   .logoMobile {
     -moz-animation: colorChange .5s ease infinite alternate;
     -webkit-animation: colorChange .5s ease infinite alternate;
     -o-animation: colorChange .5s ease infinite alternate;
     animation: colorChange .5s ease infinite alternate;
   }
-}
-
-@media screen and (max-width: 480px) {
-
 }
