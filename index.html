@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/style.css">
 
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://use.fontawesome.com/25f8d04c17.js"></script>
 
   <meta property="og:title" content="Justina Villanueva designs + codes">
   <meta property="og:site_name" content="Justina Villanueva">
@@ -29,151 +30,96 @@
 </head>
 <body>
 
-<!--
-*** HEADER ***
--->
-
-<header role="banner" class="header">
-  <div class="flex">
-    <h1 id="title" class="title"><a href="/">Justina Villanueva</a></h1>
-
-    <nav role="navigation" class="nav">
-      <ul>
-        <li><a href="/#">Home</a></li>
-        <li><a href="/#work">Work</a></li>
-        <li><a href="/#tools">Tools</a></li>
-        <li><a href="#info">Connect</a></li>
-        <li><a href="/assets/docs/JustinasAwesomeResume.pdf" target="_blank">Resume</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!--
-*** MAIN ***
--->
-
-<main role="main" class="homepage content">
-  <div class="description">
-    <p>I'm a web designer who is interested in the intersections of art, technology and activism. I'm down with D3.js, WordPress, Tumblr, Ruby, Python, Node.js, Git and sometimes just plain old pen and paper. I also run a pretty chill photo blog called <a href="http://blastbeat.us/" target="_blank">Basements &#38; Blastbeats</a>.</p>
-  </div>
-  <section id="work">
-    <h2 class="headline" >Work</h2>
-    <div class="flex">
-      <div class="text">
-        <ul>
-          <li><a href="/slutist">001: Slutist</a></li>
-          <li><a href="/craftspace">002: Craftspace</a></li>
-          <li><a href="/covenant">003: Covenant</a></li>
-        </ul>
-        <br />
-        <ul>
-          <li><strong>More sites I've designed</strong></li>
-          <li><a href="http://judithberkson.info" target="_blank" class="outerUrl">004: JudithBerkson.info</a></li>
-          <li><a href="http://www.touchmeskincare.com" target="_blank" class="outerUrl">005: TouchMeSkincare.com</a></li>
-          <li><a href="http://www.robbielee.com" target="_blank" class="outerUrl">006: RobbieLee.com</a></li>
-          <li><a href="http://mickbarr.info/" target="_blank" class="outerUrl">007: MickBarr.info</a></li>
-        </ul>
+  <div class="cover-section aura-pink">
+    <header class="site-header flex flex-center" role="banner">
+      <div class="flex-50">
+        <h1 class="site-title"><a href="/">Justina Villanueva</a></h1>
       </div>
-      <div class="grid">
-        <div class="project">
-          <a href="/slutist"><img src="/assets/images/slutist.jpg" alt="Slutist.com WordPress theme design"></a>
-          <p>001</p>
-        </div>
-        <div class="project">
-          <a href="/craftspace"><img src="/assets/images/craftspace.jpg" alt="Craftspace Tumblr Theme design">
-            <p>002</p></a>
-          </div>
-          <div class="project">
-            <a href="/covenant"><img src="/assets/images/covenant.jpg" alt="Covenant iOS app design"></a>
-            <p>003</p>
-          </div>
-        </div> <!-- .grid -->
-      </div> <!-- .flex -->
-    </section>
-
-    <section class="tools" id="tools">
-      <h2 class="headline">Tools</h2>
-      <div class="flex">
-        <div class="left">
-          <a href="http://colorname.xyz" target="_blank"><img src="/assets/images/colorname-2.jpg" alt="Links to colorname.xyz site"></a>
-        </div>
-        <div class="right caption text">
-          <p><a href="http://colorname.xyz" target="_blank" class="outerUrl">Colorname.xyz</a> is a simple javascript app I created because sometimes it's helpful to have limited color options for quickly creating interactive prototypes.</p>
+      <div class="flex-50 text-right">
+        <nav>
           <ul>
-            <li><strong>More tools On CodePen</strong></li>
-            <li><a href="http://codepen.io/justinav/pen/GjBCv" target="_blank" class="outerUrl">004: Color Table</a></li>
-            <li><a href="http://codepen.io/justinav/pen/gpLXXP/" target="_blank" class="outerUrl">005: Style Guide</a></li>
+            <li><a href="/#work">Work</a></li>
+            <li><a href="/assets/docs/JustinasAwesomeResume.pdf">Resume</a></li>
+            <li><a href="http://blastbeat.us" target="_blank">Blog</a></li>
           </ul>
-        </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="intro" class="section-container flex">
+      <div class="flex-25">
+        <h2 class="margin-left">I am ...</h2>
+      </div>
+      <div class="flex-75 container">
+        <p class="margin-left">Self-taught designer ready to build simple and fluid solutions. Currently designing at the New York City Mayor's Office. Equipped with Photoshop, Sketch, CSS3 and Post-Its. Also runs a photo blog called Basements &amp; Blastbeats.</p>
       </div>
     </section>
 
-    <section id="zines">
-      <h2 class="headline" >Flyers &#38; Zines</h2>
-      <div class="flex">
-        <div class="text">
+    <section id="work" class="section-container flex">
+      <article class="container flex-25">
+        <h2>Work</h2>
+      </article>
+      <div class="flex flex-75">
+        <article class="container flex-50">
+          <h3>Slutist</h3>
+          <p>the product: Sex-positive feminist blog</p>
+          <p>my role: WordPress Theme Design</p>
+          <p><a href="/slutist" class="url">View Process</a></p>
+          <p><a href="http://slutist.com" target="_blank" class="url">visit Slutist.com</a></p>
+        </article>
+
+        <article class="container flex-50">
+          <h3>HipHopTimeline</h3>
+          <p>the product: history of MCs who are women</p>
+          <p>my role: d3.js project</p>
+          <p><a href="http://hiphoptimeline.xyz" target="_blank" class="url">visit HipHopTimeline.xyz</a></p>
+        </article>
+
+        <article class="container flex-50">
+          <h3>Covenant</h3>
+          <p>the product: Anti-social-media for metalheads</p>
+          <p>my role: iOS App Design</p>
+          <p><a href="/covenant" class="url">View Wireframes + Comps</a></p>
+        </article>
+
+        <article class="container flex-50">
+          <h3>Craftspace</h3>
+          <p>the product: Free Tumblr Theme</p>
+          <p>my role: Customizable and 100% Responsive Design</p>
+          <p><a href="https://www.tumblr.com/theme/39318" target="_blank" class="url">Preview &amp; Install Theme</a></p>
+        </article>
+        <article class="container flex-50">
+          <h3>Colorname</h3>
+          <p>the product: Design Tool for quickly choosing color palettes</p>
+          <p>my role: Javascript project</p>
+          <p><a href="http://colorname.xyz" target="_blank" class="url">Visit Colorname.xyz</a></p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer flex flex-center">
+      <div class="flex-50">
+        <nav>
           <ul>
-            <li><a href="/printed/#kombucha"">006: Kombucha</a></li>
-            <li><a href="/printed/#diyphoto">007: DIY Photo</a></li>
-            <li><a href="/printed/#cnot">008: CNOT</a></li>
-          </ul>
-        </div>
-        <div class="zine grid">
-          <div class="project">
-            <a href="/printed/#kombucha"><img src="/assets/images/kombucha.jpg" alt="Zine Design: Kombucha Workshop"></a>
-            <p>006</p>
-          </div>
-          <div class="project">
-            <a href="/printed/#diyphoto"><img src="/assets/images/diyphoto.jpg" alt="Zine Design: Photography Workshop"></a>
-            <p>007</p>
-          </div>
-          <div class="project">
-            <a href="/printed/#cnot"><img src="/assets/images/cnot.jpg" alt="Zine Design: Currently Not On Tour Zine"></a>
-            <p>008</p>
-          </div>
-        </div> <!-- .grid -->
-      </div>
-    </section>
-
-    <section id="progress">
-      <h2 class="headline">Work In Progress</h2>
-      <p class="description">
-        I'm designing <a href="http://HipHopTimeline.xyz" target="_blank">Hip Hop Timeline</a> for a workshop I'll be teaching this summer at Willie Mae Rock Camp for Girls. My <a href="https://bl.ocks.org/justinav" target="_blank">bl.ocks page</a> houses all the d3 charts I'm working on.
-      </p>
-    </section>
-  </main>
-
-<!--
-*** FOOTER ***
--->
-<footer class="footer" id="info">
-  <h2 class="headline">Connect</h2>
-  <div class="flex">
-    <div class="left">
-      <ul>
-        <li><a href="mailto:hi@jusv.co">hi@jusv.co</a></li>
-        <li><a href="https://github.com/justinav">github.com/justinav</a></li>
-        <li><a href="https://linkedin.com/in/justinavillanueva">linkedin.com/in/justinavillanueva</a></li>
-        <li><a href="https://bl.ocks.org/justinav">bl.ocks.org/justinav</a></li>
-      </ul>
+           <li><a href="mailto:hi@jusv.co">hi@jusv.co</a></li>
+           <li><a href="http://blastbeat.us">Basements &amp; Blastbeats</a></li>
+         </ul>
+       </nav>
+     </div>
+     <div class="flex-50 text-right social-icons">
+      <nav>
+        <ul>
+          <li><a href="https://github.com/justinav" target="_blank"><i class="fa fa-x3 fa-github" title="justinav on GitHub"></i></a></li>
+          <li><a href="https://linkedin.com/in/justinavillanueva" target="_blank"><i class="fa fa-x3 fa-linkedin" title="justinavillanueva on LinkedIn"></i></a></li>
+          <li><a href="https://www.instagram.com/justinavillanueva/" target="_blank"><i class="fa fa-x3 fa-instagram" title="justinavillanueva on Instagram"></i></a></li>
+          <li><a href="https://twitter.com/justina__v" target="_blank"><i class="fa fa-x3 fa-twitter" title="justina__v on twitter"></i></a></li>
+          <li><a href="http://codepen.io/justinav/" target="_blank"><i class="fa fa-x3 fa-codepen" title="justinav on CodePen"></i></a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="right">
-      <ul>
-        <li>instagram: <a href="https://www.instagram.com/justinavillanueva/">@justinavillanueva</a></li>
-        <li>my blog: <a href="http://blastbeat.us">blastbeat.us</a></li>
-        <li>twitter: <a href="https://twitter.com/justina__v">@justina__v</a></li>
-        <li>codepen: <a href="http://codepen.io/justinav/">justinav</a></li>
-      </ul>
-    </div>
-  </div> <!-- .flex -->
+  </footer>
 
-  <div class='logo-wrapper'>
-    <p class='logo'>
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128"><polygon points="99.4,63.8 118.3,63.8 88.3,125 87.6,125 78.5,106.4"/><polygon points="68.7,2.7 87.7,2.7 57.5,63.5 86.8,125 68.1,125 38.7,63.8"/><polygon points="28.8,63.8 10,63.8 40,125 40.6,125 49.7,106.4"/><polygon points="59.6,2.7 40.6,2.7 70.8,63.5 41.2,125 59.6,125 89.6,63.8"/></svg>
-    </p>
-  </div>
-</footer>
+</div> <!-- end aura -->
 
 <script src="assets/script.js" type="text/javascript"></script>
 </body>
