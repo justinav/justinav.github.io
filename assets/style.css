@@ -5,20 +5,17 @@
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
-
 body,html {
   width: 100%;
   height: 100vh;
   padding: 0;
   margin: 0;
 }
-
 body {
   color: #331e30;
   background: #FFFFFF;
   font: 400 16px/1.2 'Work Sans', sans-serif;
 }
-
 img {
   border: 1em solid rgba(255,255,255,0.5);
   display: block;
@@ -27,32 +24,29 @@ img {
   max-width: 800px;
   width: 100%;
 }
-
 a, a:visited {
   transition: all .2s;
   color: inherit;
   text-decoration: none;
 }
-
 a:hover, a:active {
   color: inherit;
   text-decoration: underline;
 }
 
 
-/* Navigation */
+/* NAVIGATION */
 nav > ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 nav > ul li {
   display: inline-block;
   padding: 0 .5em;
 }
 
-/* Typography */
+/* TYPOGRAPHY */
 h1 {
   font-size: 50px;
   line-height: 50px;
@@ -71,7 +65,7 @@ p {
   color: rgba(93,92,244,1);
 }
 
-/* Alignment & Spacing */
+/* ALIGNMENT SPACING */
 .page {
   width: 100vw;
   min-height: 100vh;
@@ -100,7 +94,7 @@ p {
 }
 
 /*
-*** Colors
+*** COLORS
 */
 .page-blue {
   background: rgba(93,92,244,0.2);
@@ -137,9 +131,36 @@ p {
 
 
 /*
+*** ANIMATIONS
+*/
+.logo:hover #iris {
+  animation: color 4s infinite alternate;
+}
+@keyframes color {
+  0% { fill: rgba(93,92,244,1); }
+  25% { fill: rgba(255,85,85,1); }
+  50% { fill: rgba(255,0,0,1);}
+  100% { fill: rgba(93,92,244,1); }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hand-left,
+  .hand-right {
+    width: 200px;
+    position: absolute;
+    animation: grow 2s infinite alternate;
+  }
+  @keyframes grow {
+    from { width: 200px; }
+    to { width: 190px; }
+  }
+}
+
+/*
 *** TABLET AND MOBILE VIEW
 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .hand-left,
   .hand-right {
   display: none;
