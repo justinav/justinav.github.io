@@ -143,19 +143,15 @@ p {
   100% { fill: rgba(93,92,244,1); }
   }
 }
-
-@media screen and (min-width: 1024px) {
-  .hand-left,
-  .hand-right {
-    width: 200px;
-    position: absolute;
-    animation: grow 2s infinite alternate;
-  }
-  @keyframes grow {
-    from { width: 200px; }
-    to { width: 190px; }
-  }
+.hand-left,
+.hand-right {
+  animation: grow 2s infinite alternate;
 }
+@keyframes grow {
+  from { width: 200px; }
+  to { width: 190px; }
+}
+
 
 /*
 *** TABLET AND MOBILE VIEW
