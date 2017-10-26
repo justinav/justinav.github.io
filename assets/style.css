@@ -211,7 +211,15 @@ header,
 footer {
   display: flex;
   width: calc(100% - 40px);
-  margin: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+header {
+  margin-bottom: 20px;
+}
+footer{
+  margin-bottom: 60px;
 }
 .flex-wrapper{
   display: flex;
