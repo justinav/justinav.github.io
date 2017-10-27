@@ -173,7 +173,6 @@ a.btn:hover {
   background: rgba(93, 92, 244, .2);
 }
 
-
 /* ALIGNMENT SPACING */
 .page {
   width: 100vw;
@@ -273,43 +272,55 @@ footer{
 }
 
 /*
-  *** SVG
-  */
-  .svg-container {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: flex;
-  }
-  .hand-left,
-  .hand-right {
-    width: 200px;
-    position: absolute;
-    animation: grow 2s infinite alternate;
-  }
-  .hand-left {
-    left: 30px;
-  }
-  .hand-right {
-    right: 30px;
-  }
-  .logo {
-    width: 600px;
-    margin: auto;
-  }
-
+*** SVG
+*/
+.svg-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+.hand-left,
+.hand-right {
+  width: 200px;
+  position: absolute;
+  animation: grow 2s infinite alternate;
+}
+.hand-left {
+  left: 30px;
+}
+.hand-right {
+  right: 30px;
+}
+.logo {
+  width: 600px;
+  margin: auto;
+}
+.magicball {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*
 *** ANIMATIONS
 */
 .logo:hover #iris {
-  animation: color 4s infinite alternate;
+  animation: colorMulti 4s infinite alternate;
 }
-@keyframes color {
+.moon {
+  animation: colorPink 4s infinite alternate;
+}
+@keyframes colorMulti {
   0% { fill: rgba(93,92,244,1); }
   25% { fill: rgba(255,85,85,1); }
   50% { fill: rgba(255,0,0,1);}
   100% { fill: rgba(93,92,244,1); }
+}
+@keyframes colorPink {
+  0% { fill: rgba(255, 85, 85, 1); }
+  100% { fill: rgba(255, 105, 180,1) }
 }
 @keyframes grow {
   0% { width: 200px; }
