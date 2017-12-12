@@ -31,7 +31,6 @@ img {
   display: block;
   height: auto !important;
   margin: 0 auto;
-  max-width: 1060px;
   width: 100%;
 }
 a, a:visited {
@@ -42,6 +41,9 @@ a, a:visited {
 a:hover, a:active {
   color: inherit;
   text-decoration: underline;
+}
+strong {
+  font-weight: 800;
 }
 
 
@@ -72,7 +74,7 @@ nav > ul li {
 }
 .navbar {
   background: #FF5555;
-  color: #292964;
+  color: rgba(41, 41, 100, 1);
   padding: 30px 0 40px;
 }
 .navbar > nav > ul {
@@ -104,9 +106,15 @@ p {
   font-size: 15px;
   line-height: 30px;
 }
-.project-page p,
+.project-page .text-medium p,
+p.text-medium,
 .project-page h3 {
-  line-height: 1.2;
+  font-size: 30px;
+  line-height: 50px;
+  margin-bottom: 1em;
+}
+  .project-page p a {
+  text-decoration: underline;
 }
 header p,
 footer p,
@@ -162,15 +170,21 @@ footer .text-right li {
 a.btn {
   background: rgba(93, 92, 244, 1);
   color: rgba(255,255,255,1);
-  padding: 8px 20px;
-  border-radius: 30px;
+  padding: 0px 40px;
+  border-radius: 60px;
   display: inline-block;
   margin-bottom: 1em;
+  font-size: 30px;
+  line-height: 60px;
+  text-decoration: none;
 }
 a.btn:hover {
   text-decoration: none;
   color: rgba(93, 92, 244,1);
   background: rgba(93, 92, 244, .2);
+}
+.btn-icon-pad {
+  padding-right: 20px;
 }
 
 /* ALIGNMENT SPACING */
@@ -193,6 +207,15 @@ a.btn:hover {
 }
 .max-600 {
   max-width: 600px;
+}
+.container-float {
+  max-width: 700px;
+  margin: 30px auto 60px;
+}
+.container,
+.container img {
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 .row {
   width: 100%;
@@ -218,6 +241,7 @@ header {
   margin-bottom: 20px;
 }
 footer{
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 .flex-wrapper{
@@ -234,13 +258,13 @@ footer{
   width: 25%;
 }
 .site-header p {
-  color: #5D5CF4;
+  color: rgba(41, 41, 100, 1);;
   font-size: 12px;
   line-height: 12px;
 }
 .project-page header,
 .project-page footer {
-  border-bottom: 1px solid #5D5CF4;
+  border-bottom: 1px solid rgba(41, 41, 100, 1);
 }
 .project-description {
   padding-left: 20px;
@@ -251,7 +275,7 @@ footer{
 *** COLORS
 */
 .project-page {
-  color: rgba(93, 92, 244, 1);
+  color: rgba(41, 41, 100, 1);
   background: rgba(255,255,255,1);
 }
 .page-blue {
@@ -350,6 +374,9 @@ footer{
   .project-page .flex-wrapper {
     display: block;
   }
+  .container-float {
+    padding: 20px;
+  }
   .flex-75,
   .flex-25 {
     width: 100%;
@@ -363,6 +390,12 @@ footer{
   h2 {
     font-size: 30px;
     line-height: 40px;
+  }
+  .project-page .text-medium p,
+  p.text-medium,
+  .project-page h3 {
+    font-size: 17px;
+    line-height: 30px;
   }
   footer {display: block;}
   footer .flex-50 {
