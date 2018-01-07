@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="102px" viewBox="0 0 76 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-moon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1440-1-intro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-926.000000, -639.000000)">
+        <g id="flex" transform="translate(0.000000, 90.000000)">
+            <g id="right" transform="translate(720.000000, 0.000000)">
+                <g id="CONNECT" transform="translate(0.000000, 480.000000)">
+                    <g id="Group-3" transform="translate(206.000000, 69.000000)">
+                        <g id="moon">
+                            <path d="M41.6836474,84.2471024 C90.7685369,84.2471024 92.4745778,28.0592502 92.4745778,19.031813 C92.4745778,10.0043758 92.4533106,49.8339305 43.3684211,49.8339305 C-5.71646836,49.8339305 -7.78314143,19.031813 -7.78314143,19.031813 C-7.78314143,19.031813 -7.40124209,84.2471024 41.6836474,84.2471024 Z" fill="#FF5555" transform="translate(42.345718, 50.973662) rotate(-270.000000) translate(-42.345718, -50.973662) "></path>
+                            <polygon id="star" fill="#FFA204" points="1.77307616 94.4828186 4.40240446 95.6552556 7.08834053 94.1764706 6.48087721 96.6974394 8.93546664 97.9527074 6.11348162 98.4315145 4.97276351 100.896051 3.13277283 98.3346149 3.41060513e-13 98.0407548 2.4105083 96.6640858"></polygon>
+                            <polyline id="star" fill="#FFA204" points="72.7142231 35.2763427 68.1152097 33.2256085 63.4171825 35.8121824 64.4797093 31.4027028 60.1863354 29.2070872 65.1223287 28.3695958 67.1175827 24.0588235 70.3359491 28.5390848 75.8155478 29.0530817 71.5992771 31.4610424"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
