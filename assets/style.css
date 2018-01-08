@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,700,900');
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,700,900');
 
 /*
 *** Colors ***
@@ -26,7 +26,7 @@ body,html {
 body {
   color: #331e30;
   background: #FFFFFF;
-  font: 400 16px/1.2 'Work Sans', sans-serif;
+  font: 400 16px/1.6 'Work Sans', sans-serif;
 }
 img {
   display: block;
@@ -128,19 +128,22 @@ nav > ul li {
 }
 
 /* TYPOGRAPHY */
+h1, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
 h2 {
   font-size: 2em;
   line-height: 1.6;
   font-weight: 400;
-  margin-top: 0;
+  margin-top: 1em;
+  margin-bottom: .5em;
 }
-h3,
-.nav p {
+h3 {
   font-size: 2em;
   line-height: 1.6;
   font-weight: 800;
   text-transform: uppercase;
-  margin: .1em 0;
 }
 h4 {
   font-size: 1.5em;
@@ -154,15 +157,13 @@ h5 {
 }
 p {
   font-size: 1em;
-  line-height: 1.3;
-  margin: .5em 0;
+  line-height: 1.6;
 }
 .project-page .text-medium p,
 p.text-medium,
 .project-page h3 {
   font-size: 1em;
   line-height: 2;
-  margin-bottom: 1em;
 }
 .link-underline a,
 .project-page main p a {
@@ -180,12 +181,6 @@ footer .fa {
 }
 footer a:hover {
   color: rgba(93,92,244,1);
-}
-.site-title {
-  font-size: 12px;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin: 0 0 10px;
 }
 a.btn {
   background: rgba(93, 92, 244, 1);
@@ -246,13 +241,13 @@ a.btn:hover {
 }
 .container-float {
   max-width: 700px;
-  margin: 30px auto 60px;
-  padding: 10px;
+  margin: 0 auto 1em;
+  padding: 0 10px;
 }
 .container,
 .container img {
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 .row {
   width: 100%;
@@ -270,8 +265,8 @@ a.btn:hover {
   display: flex;
   width: 100%;
   flex-flow: row wrap;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 .flex-50,
 .flex-75 {
@@ -282,23 +277,34 @@ a.btn:hover {
 }
 
 /*
-*** RELATED
+*** CTA CONTAINER
+*/
+.cta {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2em .625em;
+  text-align: center;
+}
+
+/*
+*** RELATED CONTAINER
 */
 .related {
   display: flex;
   flex-flow: row wrap;
-  padding: 10px;
+  padding: 2em .625em 1.375em;
   justify-content: center;
-  margin: 30px 0 60px;
+  margin: 0;
 }
 
 .related > div {
-  margin: 0 10px 10px;
-  height: 120px;
-  width: 80px;
+  margin: 0 .3125em .625em;
+  height: 140px;
+  width: 90px;
   border: 3px solid;
   border-radius: 6px;
-  padding: 10px;
+  padding: 3px;
+  line-height: 1;
   font-weight: 800;
   justify-content: center;
   align-items: center;
@@ -306,10 +312,12 @@ a.btn:hover {
   word-break: break-all;
 }
 
-.related p,
-.related h4 {
-  font-size: 24px;
+.related h4,
+.related p {
   margin: 0;
+}
+.related p {
+  font-size: .9em;
 }
 
 .related div:hover {
