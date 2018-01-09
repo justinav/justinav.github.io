@@ -159,14 +159,13 @@ p {
   font-size: 1em;
   line-height: 1.6;
 }
-.project-page .text-medium p,
-p.text-medium,
+.text-medium,
 .project-page h3 {
   font-size: 1em;
   line-height: 2;
 }
 .link-underline a,
-.project-page main p a {
+.project-page p a {
   text-decoration: underline;
 }
 footer {
@@ -342,10 +341,6 @@ a.btn:hover {
 /*
 *** COLORS
 */
-.project-page {
-  color: rgba(41, 41, 100, 1);
-  background: rgba(255,255,255,1);
-}
 .page-blue {
   color: rgba(41, 41, 100, 1);
   background: rgba(93,92,244,0.1);
@@ -394,8 +389,7 @@ a.btn:hover {
   .container-float {
     padding: 0;
   }
-  .project-page .text-medium p,
-  p.text-medium,
+  .text-medium,
   .project-page h3 {
     font-size: 2em;
     line-height: 1.6;
