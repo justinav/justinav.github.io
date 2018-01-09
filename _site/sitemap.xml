@@ -3,6 +3,13 @@
 
     
     <url>
+        <loc>/404.html</loc>
+        <lastmod>2018-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>/collider.html</loc>
         <lastmod>2018-01-09</lastmod>
         <changefreq>daily</changefreq>
