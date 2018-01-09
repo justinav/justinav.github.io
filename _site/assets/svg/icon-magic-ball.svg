@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="50px" viewBox="0 0 52 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>magic ball</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1440-1-intro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-700.000000, -20.000000)">
+        <g id="navbar" fill="#5D5CF4">
+            <g id="logo" transform="translate(437.000000, 20.000000)">
+                <g id="magic-ball" transform="translate(263.000000, 0.000000)">
+                    <polygon id="base" opacity="0.5" points="26 32.3834197 44.8202115 32.3834197 52 50 0 50 7.03226456 32.3834197"></polygon>
+                    <ellipse id="crystal" cx="26.1293532" cy="21.761658" rx="21.7313433" ry="21.761658"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
