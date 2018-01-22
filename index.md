@@ -44,6 +44,13 @@ layout: homepage
     <h3 class="text-center">Past</h3>
     <div class="flex-wrapper">
       <div class="flex-25 inner-gutter">
+        <a href="/timeline">
+          <img src="/assets/thumbnails/thumbnail-timeline.png" alt="">
+          <p><strong>HipHopTimeline.xyz</strong></p>
+          <p><small>Moodboard, UX, UI, D3.js</small></p>
+        </a>
+      </div>
+      <div class="flex-25 inner-gutter">
         <a href="/complex">
           <img src="/assets/thumbnails/thumbnail-complex.png" alt="">
           <p><strong>Complex.com</strong></p>
