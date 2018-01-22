@@ -46,7 +46,7 @@ layout: homepage
       <div class="flex-25 inner-gutter">
         <a href="/timeline">
           <img src="/assets/thumbnails/thumbnail-timeline.png" alt="">
-          <p><strong>HipHopTimeline.xyz</strong></p>
+          <p><strong>HipHopTimeline</strong></p>
           <p><small>Moodboard, UX, UI, D3.js</small></p>
         </a>
       </div>
