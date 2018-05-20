@@ -17,6 +17,4 @@ layout: page
 </div>
 <div class="cta">
   <p>Visit <a href="http://slutist.com" target="_blank">Slutist.com</a> to see these changes IRL</p>
-  <h4>Have questions?</h4>
-  <a href="/#future" class="btn"><i class="fa fa-x3 fa-envelope-o btn-icon-pad"></i>Let's Chat</a>
 </div>
