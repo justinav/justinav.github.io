@@ -1,6 +1,8 @@
 ---
 title: Slutist
 layout: page
+category: project
+slug: slutist
 ---
 
 <section>

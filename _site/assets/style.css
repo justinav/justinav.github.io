@@ -139,6 +139,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .projects a {
   width: calc(100% / 3 - 24px);
@@ -148,10 +149,7 @@ main {
   background: gold;
 }
 .item {
-  height: calc(100vw / 6);
-  padding: 1em;
   flex: auto;
-  border: 6px solid #ff3381;
 }
 
 /* Logo */
@@ -210,9 +208,6 @@ h1 span {
   .projects {
     margin: 0;
   }
-  .item {
-    padding: 0.5em;
-  }
   header {
     position: static;
   }
@@ -227,9 +222,6 @@ h1 span {
   }
   .projects a {
     width: calc(100% / 2 - 16px);
-  }
-  .item {
-    height: calc(100vw / 3);
   }
 }
 

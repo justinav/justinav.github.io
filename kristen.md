@@ -2,6 +2,7 @@
 title: Kristen Sollee
 category: project
 layout: page
+slug: kristen
 ---
 
 <section>

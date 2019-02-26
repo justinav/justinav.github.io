@@ -1,7 +1,12 @@
 <div class="projects">
   {% for page in site.pages %} {% if page.category == "project" %}
   <a href="{{ page.url }}">
-    <div class="item">{{ page.title }}</div>
+    <div class="item">
+      <img
+        src="{{ site.url }}/assets/thumbnails/{{ page.slug }}.png"
+        alt="{{ page.title }}"
+      />
+    </div>
   </a>
   {% endif %} {% endfor %}
 </div>

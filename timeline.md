@@ -2,6 +2,7 @@
 title: Hip Hop Timeline
 category: project
 layout: page
+slug: timeline
 ---
 
 <section>

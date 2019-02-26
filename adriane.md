@@ -2,6 +2,7 @@
 title: Adriane Schramm
 category: project
 layout: page
+slug: adriane
 ---
 
 <section>

@@ -2,6 +2,7 @@
 title: Basements & Blastbeats
 category: project
 layout: page
+slug: blastbeat
 ---
 
 <section>

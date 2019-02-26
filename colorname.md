@@ -2,6 +2,7 @@
 title: Colorname
 category: project
 layout: page
+slug: colorname
 ---
 
 <section>

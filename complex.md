@@ -2,6 +2,7 @@
 title: Complex Homepage
 category: project
 layout: page
+slug: complex
 ---
 
 <section>
