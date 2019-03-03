@@ -3,6 +3,7 @@ title: Basements & Blastbeats
 category: project
 layout: page
 slug: blastbeat
+weight: 2
 ---
 
 <section>

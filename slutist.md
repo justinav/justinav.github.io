@@ -3,6 +3,7 @@ title: Slutist
 layout: page
 category: project
 slug: slutist
+weight: 1
 ---
 
 <section>

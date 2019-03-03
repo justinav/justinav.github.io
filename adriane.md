@@ -3,6 +3,7 @@ title: Adriane Schramm
 category: project
 layout: page
 slug: adriane
+weight: 9
 ---
 
 <section>
@@ -18,7 +19,7 @@ slug: adriane
 
 <section>
   <h3>Prep</h3>
-  <p>When she was ready, I asked her for simple questions.</p>
+  <p>When she was ready, I asked her four simple questions.</p>
   <img src="/assets/project/adriane-1.png" alt="email questions">
   <p>Because I knew her range work pretty well, I started jamming on a moodboard to get her excited about the possibilites for her website.</p>
   <img src="/assets/project/adriane-2.png" alt="website inspiration">

@@ -3,6 +3,7 @@ title: Complex Homepage
 category: project
 layout: page
 slug: complex
+weight: 5
 ---
 
 <section>

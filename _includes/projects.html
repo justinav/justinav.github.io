@@ -1,5 +1,6 @@
+{% assign pages = site.pages | sort:"weight" | reverse %}
 <div class="projects">
-  {% for page in site.pages %} {% if page.category == "project" %}
+  {% for page in pages %} {% if page.category == "project" %}
   <a href="{{ page.url }}">
     <div class="item">
       <img

@@ -3,6 +3,7 @@ title: Hip Hop Timeline
 category: project
 layout: page
 slug: timeline
+weight: 7
 ---
 
 <section>

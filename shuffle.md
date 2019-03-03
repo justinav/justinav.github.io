@@ -3,6 +3,7 @@ title: Complex Shuffle
 category: project
 layout: page
 slug: shuffle
+weight: 4
 ---
 
 <section>

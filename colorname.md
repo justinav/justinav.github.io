@@ -3,6 +3,7 @@ title: Colorname
 category: project
 layout: page
 slug: colorname
+weight: 3
 ---
 
 <section>
