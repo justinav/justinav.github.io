@@ -1,13 +1,17 @@
 {% assign pages = site.pages | sort:"weight" | reverse %}
-<div class="projects">
-  {% for page in pages %} {% if page.category == "project" %}
-  <a href="{{ page.url }}">
-    <div class="item">
-      <img
-        src="{{ site.url }}/assets/thumbnails/{{ page.slug }}.png"
-        alt="{{ page.title }}"
-      />
-    </div>
-  </a>
-  {% endif %} {% endfor %}
-</div>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    {% for page in pages %} {% if page.category == "project" %}
+    <a href="{{ page.url }}">
+      <div class="item">
+        <img
+          src="{{ site.url }}/assets/thumbnails/{{ page.slug }}.png"
+          alt="{{ page.title }}"
+        />
+      </div>
+    </a>
+    {% endif %} {% endfor %}
+  </div>
+</section>
