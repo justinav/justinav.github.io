@@ -21,7 +21,7 @@ weight: 9
   <h3>Prep</h3>
   <p>When she was ready, I asked her four simple questions.</p>
   <img src="/assets/project/adriane-1.png" alt="email questions">
-  <p>Because I knew her range work pretty well, I started jamming on a moodboard to get her excited about the possibilites for her website.</p>
+  <p>Because I knew her range work pretty well, I started jamming on a moodboard to get her excited about the possibilities for her website.</p>
   <img src="/assets/project/adriane-2.png" alt="website inspiration">
   <p>And then, once she sent me over links to her image files, I combed through, re-categorized them, and started workshopping different color combinations.</p>
   <img src="/assets/project/adriane-3.png" alt="color palette moodboard - a range of pinks and reds and the images I took inspiration from">
