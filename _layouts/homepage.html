@@ -2,6 +2,32 @@
 <html>
   {% include head.html %}
   <body>
-    {% include projects.html %}
+    {% include header.html %}
+    <main>
+      <div class="section big">
+        <p>
+          Product designer based in NYC.
+        </p>
+        <p>
+          Works at
+          <a href="https://postlight.com/" target="_blank">Postlight</a>.
+          Previously designed at
+          <a href="https://www.complex.com/" target="_blank">Complex</a>.
+          Sometimes a
+          <a
+            href="https://www.instagram.com/basementsandblastbeats/"
+            target="_blank"
+            >band photographer</a
+          >.
+        </p>
+        <p>
+          Have questions? Let's <a href="mailto:justinavil@gmail.com">chat</a>.
+        </p>
+      </div>
+    </main>
+    <div class="projects">
+      {% include projects.html %}
+    </div>
+    {% include footer.html %}
   </body>
 </html>

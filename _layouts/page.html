@@ -2,11 +2,11 @@
 <html>
   {% include head.html %}
   <body>
-    <div class="wrapper">
-      {% include header.html %}
-    </div>
+    {% include header.html %}
     <main>
       <div class="page">{{ content }}</div>
+      <div class="btn"><a href="/">← back</a></div>
     </main>
+    {% include footer.html %}
   </body>
 </html>

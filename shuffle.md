@@ -10,7 +10,7 @@ weight: 4
   <img src="/assets/project/shuffle-1.png" alt="">
 
   <h2>Shuffle</h2>
-  <p><strong>Year:</strong> 2017</p>
+    <p><strong>Year:</strong> 2017</p>
   <p><strong>Client:</strong> Complex Networks</p>
   <p><strong>Scope:</strong> Product Design</p>
   <p>Shuffle delivers a Snapchat-like, mobile-first video experience to the web. It provides storytelling capability with a reimagined interface for video consumption. </p>
