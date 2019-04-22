@@ -204,14 +204,15 @@ footer .flex {
   body {
     font-size: 16px;
   }
-  .flex {
-    display: block;
-  }
   .big {
     font-size: 8vw;
   }
   .projects {
     font-size: 7vw;
+  }
+  .projects.flex {
+    flex: 1;
+    justify-content: flex-start;
   }
   .projects .section {
     padding: 16px;
@@ -224,6 +225,7 @@ footer .flex {
     text-align: center;
   }
   footer .flex {
+    display: block;
     padding-bottom: 0;
   }
 }
