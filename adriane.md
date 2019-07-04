@@ -13,7 +13,7 @@ weight: 9
   <p><strong>Link:</strong> <a href="http://adrianeschramm.com" target="_blank">AdrianeSchramm.com</a></p>
   <p><strong>Scope:</strong> Design & Development</p>
 
-  <p>Adriane Schramm is an artist and a friend I very much admire. We talked about collaborating on this portfolio site for years. It took a while for her to scan, categorize and upload her work. </p>
+  <p>Adriane Schramm is an artist and a friend I very much admire. We talked about collaborating on this portfolio site for years. It took her some time to scan, categorize and upload her work. </p>
 
 </section>
 
